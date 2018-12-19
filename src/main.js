@@ -14,8 +14,8 @@ Vue.use(Element)
 Vue.use(VueResource)
 
 var app = new Vue({
-  el: '#app',
-  router,
-  store,
-  ...App,
+    el: '#app',
+    router,
+    store,
+    ...App,
 });
