@@ -1,5 +1,10 @@
+/**
+ * 写工程公用样式
+ */
+
 @charset "UTF-8";
 @import './f.scss';
+@import './reset.scss';
 @import './mixins/index.scss';
 @import './element-reset.scss';
  
@@ -7,97 +12,5 @@ a {
     cursor: pointer;
     &:hover {
         text-decoration: none;
-    }
-}
-
-// 右搜索区
-@include b(r-search) {
-    top: -55px;
-}
-
-// tab内容
-@include b(tab-content) {
-    margin-top: -30px;
-}
-
-// 分隔tab
-@include b(separate-tabs) {
-    .el-tabs__header {
-        margin-bottom: 10px
-    }
-    .el-tabs__nav {
-        float: right;
-    }
-    .el-tabs__nav-wrap::after {
-        background: none;
-    }
-    .el-tabs__active-bar {
-        background: none;
-    }
-    .el-tabs__item {
-        line-height: 20px;
-        height: 20px;
-        padding: 0 8px;
-        min-width: 0;
-        border-right: solid 2px #dedee1;
-        &:last-child {
-            border-right: none;
-        }
-    }
-}
-
-// 原生table模仿el-table样式
-@include b(kl-table) {
-    table-layout: fixed;
-    width: 100%;
-    border: 1px solid #E5ECFC;
-
-    caption { 
-        color: #999;
-        font-size: 12px;
-    }
-    th, td { 
-        padding: 11px 8px; word-wrap: break-word;
-    }
-    thead {
-        border-bottom: 2px solid #E8E8E8;
-        color: #222;
-        background: #f2f6ff;
-        font-size: 12px;
-        th { 
-            border-bottom: 1px solid #ebeef5;
-            border-right: 1px solid #E5ECFC;
-            line-height: 12px;
-            font-weight: 400;
-            text-align: center;
-        }
-        th:last-child {
-            border-right: none;
-        }
-    }
-
-    tbody {
-        font-size: 12px;
-        tr {
-            &:hover {
-                background: #E9F8F9;
-            }
-            td {
-                line-height: 17px; 
-                border-bottom: 1px solid #ecf2f9;
-                border-right: 1px solid #ebeef5;
-                text-align: center;
-            }
-        }
-    }
-
-    @include m(striped) {
-        tbody {
-            tr {
-                &:nth-of-type(2n+0) {
-                    background: #f6f9fc;
-                }
-            }
-        }
     }
 }
