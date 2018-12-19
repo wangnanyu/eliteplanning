@@ -1,56 +1,40 @@
 <template>
-  <div class="app" :style="{height: '100%'}">
-    <div class="main" :style="{height: '100%'}">
-      <router-view></router-view>
-    </div>
-     <footer-nav :showNav="showNav"></footer-nav>
-  </div>
+  <el-container id="app">
+    <router-view v-if="$route.meta.single"/>
+    <el-container v-else>
+      <el-header height="48px">
+        <router-view name="header"/>
+      </el-header>
+      <el-container>
+        <router-view name="body"/>
+      </el-container>
+    </el-container>
+  </el-container>
 </template>
 
 <script>
-import { footerNav } from './components/'
 export default {
-  name: 'app',
-  data () {
+  name: "app",
+  data() {
     return {
-      direction: 'forward',
-      showNav: true
-    }
-  },
-  components: {
-    footerNav
-  },
-  watch: {
-     // 如果路由有变化，会执行该方法
-    '$route': function() {
-      this.routeChange()
-    }
-  },
-  methods: {
-    routeChange () {
-      let path = this.$route.path
-      if (path === '/' || path === '/cinema' || path === '/me') {
-        this.showNav = true
-      } else {
-        this.showNav = false
-      }
-    }
-  },
-  created () {
-    this.routeChange()
-  },
-  mounted () {
-    window.setTimeout(() => {
-      document.documentElement.scrollTop = 0
-      document.body.scrollTop = 0
-    }, 250)
+    };
   }
-}
+};
 </script>
 
 <style>
-  body {
-    background: #f5f5f5;
-  }
+html, body {
+  height: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+}
+#app {
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  color: #333;
+}
 </style>
 

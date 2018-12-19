@@ -17,5 +17,5 @@ router.get('/movie/city', movieController.city);
 router.get('/movie/cinema_detail', movieController.cinema_detail);
 
 // 主页面
-// router.get('/app', pageController.index);
+router.get('*', pageController.index);
 module.exports = router;

@@ -2,7 +2,6 @@
  * @description 主页
  */
 
- exports.index = (req, res) => {
-    console.log(req);
+exports.index = (req, res) => {
     res.render('index');
-} 
+};
