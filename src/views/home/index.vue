@@ -22,7 +22,7 @@
     };
 </script>
 <style lang='scss' scoped>
-@import "src/style/mixins/index.scss";
-@import "src/style/define.scss";
+@import "@/style/mixins/index.scss";
+@import "@/style/define.scss";
 
 </style>

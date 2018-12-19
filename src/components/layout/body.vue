@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "src/style/mixins/index.scss";
+@import "@/style/mixins/index.scss";
 
 @include b(body) {      
     padding-top: 40px;

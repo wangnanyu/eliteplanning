@@ -1,4 +1,4 @@
-import Home from 'views/home/index';
+import Home from '@/views/home/index';
 
 export default [
     {

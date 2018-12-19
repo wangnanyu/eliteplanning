@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "src/style/mixins/index.scss";
+@import "@/style/mixins/index.scss";
 
 @include b(header) {
     width: 100%;
