@@ -14,6 +14,16 @@ exports.assetsPath = function (_path) {
     return path.posix.join(assetsSubDirectory, _path)
 }
 
+exports.assetsPathAlter = function (_path) {
+    var assetsSubDirectory = process.env.NODE_ENV === 'production'
+        ? ''
+        : config.dev.assetsSubDirectory
+
+
+    console.log(_path, path.posix.join(assetsSubDirectory, _path))
+
+    return path.posix.join(assetsSubDirectory, _path)
+}
 exports.cssLoaders = function (options) {
     options = options || {}
     // generate loader string to be used with extract text plugin

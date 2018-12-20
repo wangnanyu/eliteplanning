@@ -58,6 +58,9 @@ webpack(webpackConfig, function (err, stats) {
     dealSomingAsync(path.resolve(__dirname, '../server/public/stylesheets'), /\.css$/, /(\/..\/public)/g, function () {
         return ''
     })
+    dealSomingAsync(path.resolve(__dirname, '../server/public/javascripts'), /\.js$/, /(..\/public\/)/g, function () {
+        return ''
+    })
 })
 
 
