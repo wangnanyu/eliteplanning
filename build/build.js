@@ -1,4 +1,5 @@
 // https://github.com/shelljs/shelljs
+/* eslint-disable */
 var path = require('path')
 var fs = require('fs')
 require('./check-versions')()
@@ -57,7 +58,6 @@ webpack(webpackConfig, function (err, stats) {
     dealSomingAsync(path.resolve(__dirname, '../server/public/stylesheets'), /\.css$/, /(\/..\/public)/g, function () {
         return ''
     })
-
 })
 
 
