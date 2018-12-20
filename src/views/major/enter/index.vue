@@ -8,7 +8,7 @@
                     <p>Elite Planning</p>
                 </div>
             </div>
-            <el-button class="enter-middle" type="info" @click="goto">进入首页</el-button>
+            <el-button class="enter-middle" type="primary" @click="goto">进入首页</el-button>
             <div class="enter-bottom">
                 <p>Belong with you</p>
                 <p>Belong with your future</p>
