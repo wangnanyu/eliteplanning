@@ -6,6 +6,7 @@ $theme-color: #57c3c4;
 $alter-background: #b9e8e8;
 $white-text-color: white;
 $black-text-color: #040404;
+$shadow-color: #555555;
 
 
 @mixin text-ellipsis($width) {
@@ -19,14 +20,27 @@ $black-text-color: #040404;
     display: flex;
     align-items: center;
 }
+@mixin flex-align-baseline {
+    display: flex;
+    align-items: baseline;
+}
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 @mixin flex-justify-center {
     display: flex;
     justify-content: center;
+}
+@mixin flex-justify-start {
+    display: flex;
+    justify-content: start;
+}
+@mixin flex-justify-between {
+    display: flex;
+    justify-content: space-between;
 }
 @mixin background($url) {
     position: absolute;
@@ -35,5 +49,5 @@ $black-text-color: #040404;
     bottom: 0;
     top: 0;
     background: url('../../../assets/img/#{$url}.background.png') center no-repeat;
-    background-size: conver; 
+    background-size: cover; 
 }

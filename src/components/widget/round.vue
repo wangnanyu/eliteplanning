@@ -37,7 +37,7 @@ export default {
     height: 250px;
     background-color: white;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px #555;
+    box-shadow: 2px 2px 5px $shadow-color;
     cursor: pointer;
 }
 @include b(sub-circle) {
