@@ -1,4 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
+/* eslint-disable */
+
 var path = require('path')
 
 module.exports = {
