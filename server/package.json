@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "pm2 start ./bin/www",
     "start:strict": "node --use-strict ./bin/www"
   },
   "dependencies": {
@@ -14,6 +14,7 @@
     "express": "~4.13.1",
     "iconv-lite": "^0.4.13",
     "morgan": "~1.6.1",
+    "pm2": "^3.2.4",
     "serve-favicon": "~2.3.0"
   }
 }
