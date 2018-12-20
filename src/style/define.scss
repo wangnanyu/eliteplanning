@@ -28,3 +28,12 @@ $black-text-color: #040404;
     display: flex;
     justify-content: center;
 }
+@mixin background($url) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url('../../../assets/img/#{$url}.background.png') center no-repeat;
+    background-size: conver; 
+}

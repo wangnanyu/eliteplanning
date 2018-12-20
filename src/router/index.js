@@ -7,7 +7,7 @@ import Header from '../components/layout/top.header';
 import Body from '../components/layout/body';
 import Unauthorized from '../components/error/401';
 import NotFound from '../components/error/404';
-import Enter from '@/views/enter';
+import Enter from '@/views/major/enter';
 
 Vue.use(Router);
 
