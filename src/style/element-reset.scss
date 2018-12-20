@@ -1,0 +1,36 @@
+@include el-b(header) {
+    padding: 0;
+}
+@include el-b(main) {
+    padding: 0;
+}
+@include el-b(container) {
+    height: 100%;
+}
+@include el-b(form-item) {
+    @include e(content) {
+        font-size: 12px;
+    }
+}
+
+@include el-b(menu) {
+    border-right: none;
+}
+
+@include el-b(submenu) {
+    @include b(el-menu-item) {
+        min-width: 100%;
+    }
+}
+
+.kl-inline-buttons /deep/ .el-form-item__label {
+    visibility: hidden;
+}
+
+@include el-b(form) {
+    @include m(nonsearch) {
+        .kl-search-buttons {
+            display: none;
+        }
+    }
+}

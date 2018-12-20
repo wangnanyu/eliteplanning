@@ -1,0 +1,8 @@
+.DS_Store
+server/views/
+node_modules/
+dist/
+npm-debug.log
+.idea/
+server/public/
+

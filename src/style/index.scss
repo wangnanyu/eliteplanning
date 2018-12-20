@@ -1,0 +1,16 @@
+/**
+ * 写工程公用样式
+ */
+
+@charset "UTF-8";
+@import './f.scss';
+@import './reset.scss';
+@import './mixins/index.scss';
+@import './element-reset.scss';
+ 
+a {
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+}

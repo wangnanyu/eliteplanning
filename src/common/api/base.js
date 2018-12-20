@@ -1,0 +1,1 @@
+export const isLogin = () => console.log(1);
