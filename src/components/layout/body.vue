@@ -1,9 +1,9 @@
 <template>
     <el-container :class="[{'body--active': !active}, 'body']">
-        <el-main>
+        <el-main class="main">
             <router-view/>
         </el-main>
-        <el-footer height="20px">本系统由网易无尾熊(杭州)科技有限公司提供技术支持</el-footer>
+        <el-footer class="footer" height="20px">本系统由寰宇英才工作室提供技术支持</el-footer>
     </el-container>
 </template>
 
@@ -25,8 +25,7 @@ export default {
 <style scoped lang="scss">
 @import "@/style/mixins/index.scss";
 
-@include b(body) {      
-    padding-top: 40px;
+@include b(body) {
     background: #EAEDF3;
     overflow: hidden;
     transition: all .3s;
@@ -40,5 +39,8 @@ export default {
     text-align: center;
     font-size: 12px;
     color: #9FA6AF;
+}
+@include b(main) {
+    position: relative;
 }
 </style>

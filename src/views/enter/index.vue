@@ -18,7 +18,6 @@
 </template>
 <script>
 import Background from '@/assets/img/enter.background.png';
-console.log(Background);
 export default {
     name: 'enter',
     props: {},
