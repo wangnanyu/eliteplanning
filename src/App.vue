@@ -2,7 +2,7 @@
   <el-container id="app">
     <router-view v-if="$route.meta.single"/>
     <el-container v-else>
-      <el-header height="48px">
+      <el-header height="70px">
         <router-view name="header"/>
       </el-header>
       <el-container>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: "app",
+    name: 'app',
     data() {
         return {};
     }

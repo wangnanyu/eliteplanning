@@ -2,8 +2,10 @@
  * 定义一些通用常量,便于一起修改
  */
 
-$theme-color: #00C4C0;
-$alter-background: #f2f6ff;
+$theme-color: #57c3c4;
+$alter-background: #b9e8e8;
+$white-text-color: white;
+$black-text-color: #040404;
 
 
 @mixin text-ellipsis($width) {
