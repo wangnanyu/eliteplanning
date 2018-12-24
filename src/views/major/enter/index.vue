@@ -17,13 +17,13 @@
     </el-container>
 </template>
 <script>
-import Background from '@/assets/img/enter.background.png';
+import { ENTER } from '@@/constants/base';
 export default {
     name: 'enter',
     props: {},
     data() {
         return {
-            background: Background
+            background: ENTER
         };
     },
     methods: {

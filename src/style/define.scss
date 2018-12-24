@@ -8,6 +8,13 @@ $white-text-color: white;
 $black-text-color: #040404;
 $shadow-color: #555555;
 
+$application: 'https://haitao.nos.netease.com/da2b60e9-e14e-46d2-83bb-96464467b0d8_2009_1132.png';
+$counseling: 'https://haitao.nos.netease.com/766ae72b-fd84-4df1-8ffe-45b7681b13d8_2000_1122.png';
+$experience: 'https://haitao.nos.netease.com/1eeb1afc-4c3e-4479-a2c9-d70ede535ddc_2009_1140.png';
+$home: 'https://haitao.nos.netease.com/99b9a16f-164c-4d65-80f9-7aff9c0040f2_2009_1132.png';
+$immigration: 'https://haitao.nos.netease.com/99359e63-b610-4339-852c-3dc457fc1ee1_2000_1134.png';
+$traveling: 'https://haitao.nos.netease.com/e4039c1c-f4cb-4761-8824-526526c849a4_2009_1132.png';
+
 
 @mixin text-ellipsis($width) {
     max-width: $width;
@@ -48,6 +55,6 @@ $shadow-color: #555555;
     right: 0;
     bottom: 0;
     top: 0;
-    background: url('../../../assets/img/#{$url}.background.png') center no-repeat;
+    background: url($url) center no-repeat;
     background-size: cover; 
 }

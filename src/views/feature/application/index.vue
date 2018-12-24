@@ -12,9 +12,7 @@
 </template>
 <script>
 import Square from '@/components/widget/square';
-import America from '@/assets/img/america.png';
-import European from '@/assets/img/european.png';
-import CommonWealth from '@/assets/img/common.wealth.png';
+import { AMERICA, COMMON_WEALTH, EUROPEAN } from '@@/constants/base';
 
 export default {
     name: 'contract',
@@ -22,9 +20,9 @@ export default {
     data() {
         return {
             list: [
-                { name: '英联邦国家', ename: 'Commonwealth countries', img: CommonWealth },
-                { name: '欧洲各国', ename: 'Other European countries', img: European },
-                { name: '美国', ename: 'United States of America', img: America }
+                { name: '英联邦国家', ename: 'Commonwealth countries', img: COMMON_WEALTH },
+                { name: '欧洲各国', ename: 'Other European countries', img: EUROPEAN },
+                { name: '美国', ename: 'United States of America', img: AMERICA }
 
             ],
             width: 400,
@@ -47,7 +45,7 @@ export default {
 @import "@/style/define.scss";
 
 @include b(application) {
-    @include background(application);
+    @include background($application);
     flex-direction: column;
     padding: 100px 30px;
 }

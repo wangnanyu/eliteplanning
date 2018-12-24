@@ -42,7 +42,7 @@ export default {
 @import "@/style/define.scss";
 
 @include b(immigration) {
-    @include background(immigration);
+    @include background($immigration);
     flex-direction: column;
     padding: 100px 30px;
 }

@@ -45,7 +45,7 @@ export default {
 @import "@/style/define.scss";
 
 @include b(counseling) {
-    @include background(traveling);
+    @include background($traveling);
     flex-direction: column;
     padding: 100px 30px;
 }

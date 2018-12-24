@@ -44,7 +44,7 @@ export default {
 @import "@/style/define.scss";
 
 @include b(experience) {
-    @include background(experience);
+    @include background($experience);
     flex-direction: column;
     padding: 100px 30px;
 }

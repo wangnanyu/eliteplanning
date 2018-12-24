@@ -37,6 +37,6 @@ export default {
 @include b(home) {
     @include flex-align-center;
     justify-content: space-around;
-    @include background(home);
+    @include background($home);
 }
 </style>
